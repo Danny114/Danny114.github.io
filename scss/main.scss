@@ -1,6 +1,5 @@
 @import "variables";
 @import "utilities";
-@import "item_grid";
 
 // general styles
 * {
@@ -35,9 +34,6 @@ img {
 
 // logo
 #logo {
-  // width: 60px;
-  // height: 50px;
-  // padding-top: 1px;
   width: 80px;
   height: 60px;
   color: #fff;
@@ -171,8 +167,6 @@ img {
 
   img {
     width: 100%;
-    // border: 1px solid $main-color;
-    // border-radius: 5px;
     margin-bottom: 0.75rem;
 
     &:hover {
@@ -192,7 +186,6 @@ img {
   }
 
   .item {
-    // padding: 0.5rem;
     border: 2px solid $dark-color;
     border-radius: 5px;
   }
