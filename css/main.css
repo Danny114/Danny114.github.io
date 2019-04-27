@@ -206,6 +206,9 @@ img {
     border: 2px solid #333;
     border-radius: 5px; }
 
+.status-update {
+  color: #0198b1; }
+
 #contact-a .form-group {
   display: grid;
   grid-template-areas: "name email" "subject phone" "message message";
