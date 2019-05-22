@@ -188,11 +188,10 @@ img {
 .projects {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1rem;
-  box-sizing: border-box; }
+  grid-gap: 1rem; }
   .projects img {
     width: 100%;
-    margin-bottom: 0.75rem; }
+    border: 2px solid #333; }
     .projects img:hover {
       opacity: 0.7;
       border-color: #333; }
@@ -202,9 +201,6 @@ img {
   .projects .lead {
     margin-bottom: 1rem;
     padding: 0.4rem; }
-  .projects .item {
-    border: 2px solid #333;
-    border-radius: 5px; }
 
 .status-update {
   color: #0198b1; }
