@@ -159,42 +159,44 @@ img {
 }
 
 // projects
-.projects {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1rem;
-  // box-sizing: border-box;
+.projects_showcase {
+  box-sizing: border-box;
 
   img {
-    width: 100%;
-    // margin-bottom: 0.75rem;
-    border: 2px solid $dark-color;
-
-    &:hover {
-      opacity: 0.7;
-      border-color: $dark-color;
-    }
-  }
-
-  .full-width {
-    width: 100%;
-    box-sizing: border-box;
+    width: 80%;
+    border-right: 4px solid $main-color;
+    border-radius: 5px;
   }
 
   .lead {
-    margin-bottom: 1rem;
-    padding: 0.4rem;
+    // margin-bottom: 1rem;
+    // padding: 0.4rem;
+    margin-bottom: 0.5rem;
+    padding: 0 !important;
   }
 
-  // .item {
-  //   border: 2px solid $dark-color;
-  //   border-radius: 5px;
-  // }
+  .projects {
+    background-color: #30415d;
+    height: 80vh;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #fff;
+
+    &:nth-child(even) {
+      background-color: #6e7376;
+    }
+
+    .item {
+      flex: 1;
+    }
+  }
 }
 
-.status-update {
-  color: $main-color;
-}
+// .status-update {
+//   color: $main-color;
+// }
 
 // contact page
 #contact {

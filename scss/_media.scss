@@ -30,7 +30,7 @@
     justify-content: space-between;
   }
 
-  .projects {
+  .projects_showcase {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -111,9 +111,12 @@
     }
   }
 
-  .projects {
+  .projects_showcase {
     grid-template-columns: 1fr;
 
+    .projects {
+      display: block;
+    }
     .item {
       border: none;
     }
