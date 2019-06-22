@@ -172,6 +172,16 @@ img {
   grid-area: bio;
   border-left: 3px solid #0198b1;
   padding: 0.8rem; }
+  #about-a .bio-des {
+    text-align: left;
+    text-indent: 2rem; }
+
+#about-a .resume-dir {
+  text-align: center !important; }
+  #about-a .resume-dir #resume-link {
+    color: #0198b1;
+    cursor: pointer;
+    font-weight: bold; }
 
 #about-b .progress {
   overflow: hidden;
@@ -185,6 +195,9 @@ img {
     text-align: center;
     background: #0198b1; }
 
+#work-a {
+  padding-top: 3rem; }
+
 .projects_showcase {
   box-sizing: border-box; }
   .projects_showcase img {
@@ -192,8 +205,9 @@ img {
     border-right: 4px solid #0198b1;
     border-radius: 5px; }
   .projects_showcase .lead {
-    margin-bottom: 0.5rem;
-    padding: 0 !important; }
+    margin-bottom: 1rem;
+    padding: 0 !important;
+    font-weight: bolder; }
   .projects_showcase .projects {
     background-color: #30415d;
     height: 80vh;
@@ -206,6 +220,10 @@ img {
       background-color: #6e7376; }
     .projects_showcase .projects .item {
       flex: 1; }
+    .projects_showcase .projects .proj-des {
+      margin-bottom: 1rem;
+      text-align: left;
+      text-indent: 2rem; }
 
 #contact-a .form-group {
   display: grid;

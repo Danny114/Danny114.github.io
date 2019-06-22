@@ -11,8 +11,12 @@ body {
   font-family: "Nunito", sans-serif;
   line-height: 1.6;
   background: #fff;
+  // display: flex;
+  // flex-direction: column;
 }
-
+// .flex-container {
+//   flex: 1 0 auto;
+// }
 a {
   text-decoration: none;
   color: $dark-color;
@@ -136,6 +140,20 @@ img {
       grid-area: bio;
       border-left: 3px solid $main-color;
       padding: 0.8rem;
+
+      &-des {
+        text-align: left;
+        text-indent: 2rem;
+      }
+    }
+    .resume-dir {
+      text-align: center !important;
+
+      #resume-link {
+        color: $main-color;
+        cursor: pointer;
+        font-weight: bold;
+      }
     }
   }
 
@@ -158,6 +176,10 @@ img {
   }
 }
 
+#work-a {
+  padding-top: 3rem;
+}
+
 // projects
 .projects_showcase {
   box-sizing: border-box;
@@ -171,8 +193,9 @@ img {
   .lead {
     // margin-bottom: 1rem;
     // padding: 0.4rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
     padding: 0 !important;
+    font-weight: bolder;
   }
 
   .projects {
@@ -190,6 +213,12 @@ img {
 
     .item {
       flex: 1;
+    }
+
+    .proj-des {
+      margin-bottom: 1rem;
+      text-align: left;
+      text-indent: 2rem;
     }
   }
 }
