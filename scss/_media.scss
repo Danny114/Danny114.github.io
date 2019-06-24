@@ -114,11 +114,17 @@
   .projects_showcase {
     grid-template-columns: 1fr;
 
-    .projects {
-      display: block;
+    .project {
+      flex-direction: column;
+      justify-content: center;
+      height: 50vh;
     }
     .item {
       border: none;
+    }
+
+    .proj-img {
+      // margin-top: 2rem;
     }
   }
 

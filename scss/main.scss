@@ -198,7 +198,7 @@ img {
     font-weight: bolder;
   }
 
-  .projects {
+  .project {
     background-color: #30415d;
     height: 80vh;
     padding: 1rem;
@@ -219,6 +219,15 @@ img {
       margin-bottom: 1rem;
       text-align: left;
       text-indent: 2rem;
+    }
+
+    #portfolio-link {
+      cursor: not-allowed;
+
+      &:hover {
+        color: $dark-color;
+        background-color: #fff;
+      }
     }
   }
 }
