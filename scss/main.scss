@@ -11,8 +11,12 @@ body {
   font-family: "Nunito", sans-serif;
   line-height: 1.6;
   background: #fff;
+  // display: flex;
+  // flex-direction: column;
 }
-
+// .flex-container {
+//   flex: 1 0 auto;
+// }
 a {
   text-decoration: none;
   color: $dark-color;
@@ -136,6 +140,20 @@ img {
       grid-area: bio;
       border-left: 3px solid $main-color;
       padding: 0.8rem;
+
+      &-des {
+        text-align: left;
+        text-indent: 2rem;
+      }
+    }
+    .resume-dir {
+      text-align: center !important;
+
+      #resume-link {
+        color: $main-color;
+        cursor: pointer;
+        font-weight: bold;
+      }
     }
   }
 
@@ -158,42 +176,65 @@ img {
   }
 }
 
+#work-a {
+  padding-top: 3rem;
+}
+
 // projects
-.projects {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1rem;
+.projects_showcase {
   box-sizing: border-box;
 
   img {
-    width: 100%;
-    margin-bottom: 0.75rem;
-
-    &:hover {
-      opacity: 0.7;
-      border-color: $dark-color;
-    }
-  }
-
-  .full-width {
-    width: 100%;
-    box-sizing: border-box;
+    width: 80%;
+    border-right: 4px solid $main-color;
+    border-radius: 5px;
   }
 
   .lead {
+    // margin-bottom: 1rem;
+    // padding: 0.4rem;
     margin-bottom: 1rem;
-    padding: 0.4rem;
+    padding: 0 !important;
+    font-weight: bolder;
   }
 
-  .item {
-    border: 2px solid $dark-color;
-    border-radius: 5px;
+  .project {
+    background-color: #30415d;
+    height: 80vh;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #fff;
+
+    &:nth-child(even) {
+      background-color: #6e7376;
+    }
+
+    .item {
+      flex: 1;
+    }
+
+    .proj-des {
+      margin-bottom: 1rem;
+      text-align: left;
+      text-indent: 2rem;
+    }
+
+    #portfolio-link {
+      cursor: not-allowed;
+
+      &:hover {
+        color: $dark-color;
+        background-color: #fff;
+      }
+    }
   }
 }
 
-.status-update {
-  color: $main-color;
-}
+// .status-update {
+//   color: $main-color;
+// }
 
 // contact page
 #contact {

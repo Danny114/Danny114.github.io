@@ -172,6 +172,16 @@ img {
   grid-area: bio;
   border-left: 3px solid #0198b1;
   padding: 0.8rem; }
+  #about-a .bio-des {
+    text-align: left;
+    text-indent: 2rem; }
+
+#about-a .resume-dir {
+  text-align: center !important; }
+  #about-a .resume-dir #resume-link {
+    color: #0198b1;
+    cursor: pointer;
+    font-weight: bold; }
 
 #about-b .progress {
   overflow: hidden;
@@ -185,29 +195,40 @@ img {
     text-align: center;
     background: #0198b1; }
 
-.projects {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1rem;
-  box-sizing: border-box; }
-  .projects img {
-    width: 100%;
-    margin-bottom: 0.75rem; }
-    .projects img:hover {
-      opacity: 0.7;
-      border-color: #333; }
-  .projects .full-width {
-    width: 100%;
-    box-sizing: border-box; }
-  .projects .lead {
-    margin-bottom: 1rem;
-    padding: 0.4rem; }
-  .projects .item {
-    border: 2px solid #333;
-    border-radius: 5px; }
+#work-a {
+  padding-top: 3rem; }
 
-.status-update {
-  color: #0198b1; }
+.projects_showcase {
+  box-sizing: border-box; }
+  .projects_showcase img {
+    width: 80%;
+    border-right: 4px solid #0198b1;
+    border-radius: 5px; }
+  .projects_showcase .lead {
+    margin-bottom: 1rem;
+    padding: 0 !important;
+    font-weight: bolder; }
+  .projects_showcase .project {
+    background-color: #30415d;
+    height: 80vh;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #fff; }
+    .projects_showcase .project:nth-child(even) {
+      background-color: #6e7376; }
+    .projects_showcase .project .item {
+      flex: 1; }
+    .projects_showcase .project .proj-des {
+      margin-bottom: 1rem;
+      text-align: left;
+      text-indent: 2rem; }
+    .projects_showcase .project #portfolio-link {
+      cursor: not-allowed; }
+      .projects_showcase .project #portfolio-link:hover {
+        color: #333;
+        background-color: #fff; }
 
 #contact-a .form-group {
   display: grid;
@@ -276,7 +297,7 @@ img {
     min-height: 100vh;
     flex-direction: column;
     justify-content: space-between; }
-  .projects {
+  .projects_showcase {
     grid-template-columns: repeat(2, 1fr); } }
 
 @media (max-width: 500px) {
@@ -312,9 +333,13 @@ img {
     grid-template-areas: "bioimage" "bio" "aw1" "aw2" "aw3"; }
   #about-c {
     display: none; }
-  .projects {
+  .projects_showcase {
     grid-template-columns: 1fr; }
-    .projects .item {
+    .projects_showcase .project {
+      flex-direction: column;
+      justify-content: center;
+      height: 50vh; }
+    .projects_showcase .item {
       border: none; }
   #contact-a {
     margin: 0; }
