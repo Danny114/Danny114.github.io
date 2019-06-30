@@ -337,7 +337,6 @@ img {
     grid-template-columns: 1fr; }
     .projects_showcase .project {
       flex-direction: column;
-      justify-content: center;
       height: 50vh; }
     .projects_showcase .item {
       border: none; }
