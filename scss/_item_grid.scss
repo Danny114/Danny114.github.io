@@ -1,7 +1,7 @@
 .items {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+  // box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
   .item {
     position: relative;
     background: $main-color;
@@ -38,10 +38,6 @@
     }
 
     &-image {
-      // background-image: url("../img/designs/login.jpg");
-      // background-size: 100% 100%;
-      // background-repeat: no-repeat;
-      // height: auto;
       transform: translateZ(0);
       display: block;
       transition: transform 750ms cubic-bezier(0.2, 1, 0.3, 1);
