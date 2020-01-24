@@ -222,7 +222,7 @@ img {
       flex: 1; }
     .projects_showcase .project .proj-des {
       margin-bottom: 1rem;
-      text-align: left;
+      text-align: center;
       text-indent: 2rem; }
     .projects_showcase .project #portfolio-link {
       cursor: not-allowed; }
